@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/costumes",
+      "handler": "costume.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/costumes/count",
+      "handler": "costume.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/costumes/:id",
+      "handler": "costume.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/costumes",
+      "handler": "costume.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/costumes/:id",
+      "handler": "costume.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/costumes/:id",
+      "handler": "costume.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kategoria": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "elements": {
+      "via": "categories",
+      "private": true,
+      "collection": "element",
+      "dominant": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "kategoria"
+    }
+  }
+}

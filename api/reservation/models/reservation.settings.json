@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "Reservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rezerwacja_od": {
+      "type": "date",
+      "required": true
+    },
+    "rezerwacja_do": {
+      "type": "date"
+    },
+    "costume": {
+      "via": "reservations",
+      "private": true,
+      "model": "costume"
+    },
+    "customer": {
+      "private": true,
+      "via": "reservations",
+      "model": "customer"
+    }
+  }
+}

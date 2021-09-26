@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "costumes",
+  "info": {
+    "name": "Costume",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cena": {
+      "type": "decimal"
+    },
+    "zdjecia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tytul": {
+      "type": "string"
+    },
+    "cena_promo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cena-promo.cena-promo"
+    },
+    "model": {
+      "via": "costumes",
+      "model": "model"
+    },
+    "size": {
+      "via": "costumes",
+      "model": "size"
+    },
+    "reservations": {
+      "via": "costume",
+      "collection": "reservation"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "tytul"
+    }
+  }
+}
