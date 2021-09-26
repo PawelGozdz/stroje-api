@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "name": "Color",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kolor": {
+      "type": "string",
+      "required": true
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "elements": {
+      "via": "colors",
+      "private": true,
+      "collection": "element",
+      "dominant": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "kolor"
+    }
+  }
+}

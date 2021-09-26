@@ -1,0 +1,21 @@
+{
+  "collectionName": "cena_promo",
+  "info": {
+    "name": "cena_promo",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "cena": {
+      "type": "decimal",
+      "required": true
+    },
+    "cena_od": {
+      "type": "date",
+      "required": true
+    },
+    "cena_do": {
+      "type": "date"
+    }
+  }
+}

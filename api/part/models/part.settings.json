@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parts",
+  "info": {
+    "name": "Part",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tytul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40,
+      "unique": true
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "elements": {
+      "private": true,
+      "via": "part",
+      "collection": "element"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "tytul"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu",
+  "info": {
+    "name": "Menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "item"
+    },
+    "opis": {
+      "type": "string"
+    }
+  }
+}

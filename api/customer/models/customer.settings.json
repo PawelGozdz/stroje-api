@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imie_i_nazwisko": {
+      "type": "string"
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "telefon": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "zablokowany": {
+      "type": "boolean",
+      "default": false
+    },
+    "reservations": {
+      "via": "customer",
+      "collection": "reservation"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "name": "Model",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tytul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "cena": {
+      "type": "decimal",
+      "required": true
+    },
+    "zdjecia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cena_promo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cena-promo.cena-promo"
+    },
+    "costumes": {
+      "via": "model",
+      "collection": "costume"
+    },
+    "elements": {
+      "via": "model",
+      "collection": "element"
+    },
+    "sizes": {
+      "via": "models",
+      "collection": "size",
+      "dominant": true
+    },
+    "plec": {
+      "via": "models",
+      "model": "gender"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "tytul"
+    }
+  }
+}
