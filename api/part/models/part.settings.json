@@ -21,14 +21,13 @@
     "opis": {
       "type": "richtext"
     },
-    "elements": {
-      "private": true,
-      "via": "part",
-      "collection": "element"
-    },
     "url": {
       "type": "uid",
       "targetField": "tytul"
+    },
+    "elements": {
+      "via": "parts",
+      "collection": "element"
     }
   }
 }

@@ -42,9 +42,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "part": {
+    "parts": {
+      "collection": "part",
       "via": "elements",
-      "model": "part"
+      "dominant": true
     },
     "url": {
       "type": "uid",
