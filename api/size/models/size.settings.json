@@ -20,11 +20,6 @@
     "opis": {
       "type": "richtext"
     },
-    "costumes": {
-      "via": "size",
-      "private": true,
-      "collection": "costume"
-    },
     "models": {
       "private": true,
       "via": "sizes",
@@ -33,6 +28,10 @@
     "url": {
       "type": "uid",
       "targetField": "rozmiar"
+    },
+    "costumes": {
+      "via": "sizes",
+      "collection": "costume"
     }
   }
 }

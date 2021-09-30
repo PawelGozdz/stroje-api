@@ -37,9 +37,10 @@
       "via": "costumes",
       "model": "model"
     },
-    "size": {
+    "sizes": {
+      "collection": "size",
       "via": "costumes",
-      "model": "size"
+      "dominant": true
     },
     "reservations": {
       "via": "costume",
