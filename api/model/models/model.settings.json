@@ -43,10 +43,6 @@
       "via": "model",
       "collection": "costume"
     },
-    "elements": {
-      "via": "model",
-      "collection": "element"
-    },
     "sizes": {
       "via": "models",
       "collection": "size",
@@ -59,6 +55,20 @@
     "url": {
       "type": "uid",
       "targetField": "tytul"
+    },
+    "categories": {
+      "via": "models",
+      "collection": "category"
+    },
+    "parts": {
+      "collection": "part",
+      "via": "models",
+      "dominant": true
+    },
+    "colors": {
+      "collection": "color",
+      "via": "models",
+      "dominant": true
     }
   }
 }

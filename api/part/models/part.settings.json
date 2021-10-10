@@ -25,9 +25,9 @@
       "type": "uid",
       "targetField": "tytul"
     },
-    "elements": {
+    "models": {
       "via": "parts",
-      "collection": "element"
+      "collection": "model"
     }
   }
 }

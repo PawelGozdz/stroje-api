@@ -21,8 +21,8 @@
       "type": "richtext"
     },
     "models": {
-      "private": true,
       "via": "plec",
+      "private": true,
       "collection": "model"
     },
     "url": {

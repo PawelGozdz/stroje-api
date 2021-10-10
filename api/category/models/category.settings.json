@@ -20,10 +20,9 @@
     "opis": {
       "type": "richtext"
     },
-    "elements": {
+    "models": {
       "via": "categories",
-      "private": true,
-      "collection": "element",
+      "collection": "model",
       "dominant": true
     },
     "url": {

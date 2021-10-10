@@ -19,15 +19,13 @@
     "opis": {
       "type": "richtext"
     },
-    "elements": {
-      "via": "colors",
-      "private": true,
-      "collection": "element",
-      "dominant": true
-    },
     "url": {
       "type": "uid",
       "targetField": "kolor"
+    },
+    "models": {
+      "via": "colors",
+      "collection": "model"
     }
   }
 }

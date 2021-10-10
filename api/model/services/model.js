@@ -5,4 +5,9 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  // async find(params, populate) {
+  //   console.log(await strapi)
+  //   return await strapi.query('model').find(params, ['zdjecia', 'plec', 'costumes', 'sizes']);
+  // },
+};

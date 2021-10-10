@@ -1,0 +1,14 @@
+{
+  "collectionName": "colors_elements",
+  "info": {
+    "name": "Color_element",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "model": "color"
+    }
+  }
+}

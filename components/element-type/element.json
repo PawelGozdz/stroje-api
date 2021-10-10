@@ -1,0 +1,19 @@
+{
+  "collectionName": "element_types",
+  "info": {
+    "name": "element",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "part": {
+      "model": "part"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors-element.colors"
+    }
+  }
+}
