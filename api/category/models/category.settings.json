@@ -21,6 +21,7 @@
       "type": "richtext"
     },
     "models": {
+      "private": true,
       "via": "categories",
       "collection": "model",
       "dominant": true

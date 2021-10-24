@@ -30,7 +30,7 @@
       "targetField": "rozmiar"
     },
     "costumes": {
-      "via": "sizes",
+      "via": "size",
       "collection": "costume"
     }
   }

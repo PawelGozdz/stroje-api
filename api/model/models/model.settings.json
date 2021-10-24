@@ -66,8 +66,8 @@
       "dominant": true
     },
     "colors": {
-      "collection": "color",
       "via": "models",
+      "collection": "color",
       "dominant": true
     }
   }
