@@ -1,0 +1,27 @@
+{
+  "collectionName": "page_headers",
+  "info": {
+    "name": "page_headers",
+    "icon": "caret-square-up"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6"
+      ],
+      "default": "h3"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "page_slider",
+  "info": {
+    "name": "slider",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "slider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
