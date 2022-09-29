@@ -24,9 +24,13 @@
       "targetField": "kolor"
     },
     "models": {
-      "private": true,
       "via": "colors",
+      "private": true,
       "collection": "model"
+    },
+    "dodatkis": {
+      "via": "colors",
+      "collection": "dodatki"
     }
   }
 }

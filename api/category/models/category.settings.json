@@ -21,14 +21,18 @@
       "type": "richtext"
     },
     "models": {
-      "private": true,
       "via": "categories",
+      "private": true,
       "collection": "model",
       "dominant": true
     },
     "url": {
       "type": "uid",
       "targetField": "kategoria"
+    },
+    "dodatkis": {
+      "via": "categories",
+      "collection": "dodatki"
     }
   }
 }

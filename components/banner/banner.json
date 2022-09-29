@@ -1,0 +1,23 @@
+{
+  "collectionName": "page_banners",
+  "info": {
+    "name": "banner",
+    "icon": "backspace",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "page_banners": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

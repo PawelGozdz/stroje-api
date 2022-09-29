@@ -20,7 +20,9 @@
       "type": "dynamiczone",
       "components": [
         "headers.page-headers",
-        "slider.slider"
+        "slider.slider",
+        "text.rich-text",
+        "banner.banner"
       ]
     },
     "url": {

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "models",
+  "collectionName": "dodatkis",
   "info": {
-    "name": "Model",
+    "name": "Dodatki",
     "description": ""
   },
   "options": {
@@ -21,8 +21,7 @@
       "type": "richtext"
     },
     "cena": {
-      "type": "decimal",
-      "required": false
+      "type": "decimal"
     },
     "zdjecia": {
       "collection": "file",
@@ -39,43 +38,35 @@
       "repeatable": true,
       "component": "cena-promo.cena-promo"
     },
-    "costumes": {
-      "via": "model",
-      "collection": "costume"
-    },
     "sizes": {
-      "via": "models",
       "collection": "size",
+      "via": "dodatkis",
       "dominant": true
     },
     "plec": {
-      "via": "models",
-      "model": "gender"
+      "model": "gender",
+      "via": "dodatkis"
     },
     "url": {
       "type": "uid",
       "targetField": "tytul"
     },
     "categories": {
-      "via": "models",
-      "collection": "category"
-    },
-    "parts": {
-      "collection": "part",
-      "via": "models",
+      "collection": "category",
+      "via": "dodatkis",
       "dominant": true
     },
     "colors": {
-      "via": "models",
       "collection": "color",
+      "via": "dodatkis",
       "dominant": true
     },
     "type": {
       "type": "enumeration",
       "enum": [
-        "stroje"
+        "dodatki"
       ],
-      "default": "stroje",
+      "default": "dodatki",
       "required": true
     }
   }

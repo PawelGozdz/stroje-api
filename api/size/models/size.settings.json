@@ -32,6 +32,10 @@
     "costumes": {
       "via": "size",
       "collection": "costume"
+    },
+    "dodatkis": {
+      "via": "sizes",
+      "collection": "dodatki"
     }
   }
 }

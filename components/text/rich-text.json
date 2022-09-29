@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_rich_texts",
+  "info": {
+    "name": "rich_text",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "page_main_text": {
+      "type": "richtext"
+    }
+  }
+}

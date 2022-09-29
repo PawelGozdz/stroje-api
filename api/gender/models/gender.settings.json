@@ -28,6 +28,10 @@
     "url": {
       "type": "uid",
       "targetField": "title"
+    },
+    "dodatkis": {
+      "via": "plec",
+      "collection": "dodatki"
     }
   }
 }

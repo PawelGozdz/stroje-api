@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dodatkis",
+      "handler": "dodatki.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dodatkis/count",
+      "handler": "dodatki.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dodatkis/:id",
+      "handler": "dodatki.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dodatkis",
+      "handler": "dodatki.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dodatkis/:id",
+      "handler": "dodatki.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dodatkis/:id",
+      "handler": "dodatki.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
