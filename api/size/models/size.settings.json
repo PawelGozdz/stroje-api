@@ -33,9 +33,9 @@
       "via": "size",
       "collection": "costume"
     },
-    "dodatkis": {
+    "d_models": {
       "via": "sizes",
-      "collection": "dodatki"
+      "collection": "d-model"
     }
   }
 }

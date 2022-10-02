@@ -28,9 +28,9 @@
       "private": true,
       "collection": "model"
     },
-    "dodatkis": {
+    "d_models": {
       "via": "colors",
-      "collection": "dodatki"
+      "collection": "d-model"
     }
   }
 }

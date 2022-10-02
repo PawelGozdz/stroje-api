@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "gender",
+  "collectionName": "sub_categories",
   "info": {
-    "name": "Gender",
-    "description": ""
+    "name": "sub_category"
   },
   "options": {
     "increments": true,
@@ -12,26 +11,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "sub_kategoria": {
       "type": "string",
       "required": true,
-      "unique": true
+      "maxLength": 60
     },
     "opis": {
       "type": "richtext"
     },
-    "models": {
-      "via": "plec",
-      "private": true,
-      "collection": "model"
-    },
     "url": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "sub_kategoria"
     },
-    "d_models": {
-      "via": "plec",
-      "collection": "d-model"
+    "category": {
+      "model": "category",
+      "via": "sub_categories"
     }
   }
 }

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "d_models",
+  "info": {
+    "name": "DModel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tytul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "cena": {
+      "type": "decimal"
+    },
+    "zdjecia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cena_promo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cena-promo.cena-promo"
+    },
+    "sizes": {
+      "collection": "size",
+      "via": "d_models",
+      "dominant": true
+    },
+    "plec": {
+      "model": "gender",
+      "via": "d_models"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "tytul"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "d_models",
+      "dominant": true
+    },
+    "parts": {
+      "collection": "part",
+      "via": "d_models",
+      "dominant": true
+    },
+    "colors": {
+      "collection": "color",
+      "via": "d_models",
+      "dominant": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "dodatki"
+      ],
+      "default": "dodatki",
+      "required": true
+    },
+    "d_categories": {
+      "collection": "d-category",
+      "via": "d_models",
+      "dominant": true
+    }
+  }
+}

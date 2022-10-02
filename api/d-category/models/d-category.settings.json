@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "c_category",
   "info": {
-    "name": "Category",
-    "description": ""
+    "name": "DCategory"
   },
   "options": {
     "increments": true,
@@ -20,18 +19,12 @@
     "opis": {
       "type": "richtext"
     },
-    "models": {
-      "via": "categories",
-      "private": true,
-      "collection": "model",
-      "dominant": true
-    },
     "url": {
       "type": "uid",
       "targetField": "kategoria"
     },
     "d_models": {
-      "via": "categories",
+      "via": "d_categories",
       "collection": "d-model"
     }
   }

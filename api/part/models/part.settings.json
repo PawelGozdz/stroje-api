@@ -28,6 +28,10 @@
     "models": {
       "via": "parts",
       "collection": "model"
+    },
+    "d_models": {
+      "via": "parts",
+      "collection": "d-model"
     }
   }
 }
