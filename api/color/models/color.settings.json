@@ -24,11 +24,12 @@
       "targetField": "kolor"
     },
     "models": {
-      "via": "colors",
       "private": true,
+      "via": "colors",
       "collection": "model"
     },
     "d_models": {
+      "private": true,
       "via": "colors",
       "collection": "d-model"
     }

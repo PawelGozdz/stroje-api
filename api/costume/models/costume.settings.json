@@ -38,8 +38,8 @@
       "model": "model"
     },
     "size": {
-      "model": "size",
-      "via": "costumes"
+      "via": "costumes",
+      "model": "size"
     },
     "reservations": {
       "via": "costume",

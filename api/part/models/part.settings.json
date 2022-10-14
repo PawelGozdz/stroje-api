@@ -26,10 +26,12 @@
       "targetField": "tytul"
     },
     "models": {
+      "private": true,
       "via": "parts",
       "collection": "model"
     },
     "d_models": {
+      "private": true,
       "via": "parts",
       "collection": "d-model"
     }

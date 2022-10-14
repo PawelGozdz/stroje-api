@@ -38,31 +38,31 @@
       "component": "cena-promo.cena-promo"
     },
     "sizes": {
-      "collection": "size",
       "via": "d_models",
+      "collection": "size",
       "dominant": true
     },
     "plec": {
-      "model": "gender",
-      "via": "d_models"
+      "via": "d_models",
+      "model": "gender"
     },
     "url": {
       "type": "uid",
       "targetField": "tytul"
     },
     "categories": {
-      "collection": "category",
       "via": "d_models",
+      "collection": "category",
       "dominant": true
     },
     "parts": {
-      "collection": "part",
       "via": "d_models",
+      "collection": "part",
       "dominant": true
     },
     "colors": {
-      "collection": "color",
       "via": "d_models",
+      "collection": "color",
       "dominant": true
     },
     "type": {
@@ -74,8 +74,8 @@
       "required": true
     },
     "d_categories": {
-      "collection": "d-category",
       "via": "d_models",
+      "collection": "d-category",
       "dominant": true
     }
   }

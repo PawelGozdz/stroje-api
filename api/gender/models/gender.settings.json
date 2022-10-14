@@ -21,8 +21,8 @@
       "type": "richtext"
     },
     "models": {
-      "via": "plec",
       "private": true,
+      "via": "plec",
       "collection": "model"
     },
     "url": {
@@ -30,6 +30,7 @@
       "targetField": "title"
     },
     "d_models": {
+      "private": true,
       "via": "plec",
       "collection": "d-model"
     }

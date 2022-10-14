@@ -21,8 +21,8 @@
       "type": "richtext"
     },
     "models": {
-      "via": "categories",
       "private": true,
+      "via": "categories",
       "collection": "model",
       "dominant": true
     },
@@ -31,6 +31,7 @@
       "targetField": "kategoria"
     },
     "d_models": {
+      "private": true,
       "via": "categories",
       "collection": "d-model"
     }
